@@ -11,9 +11,8 @@ bot.on('message', message => {
 
 bot.on('message', message => {
 	const swearWords = ["keciduk"]
-	if (message.author.bot) return;
 	if (swearWords.some(word => message.content.includes(word)) ) {
-		bot.users.get('309800585438298122').send(message.content)
+		bot.users.get('309800585438298122').send('Ada yg kena rajia omm')
 	}
 	
 });
