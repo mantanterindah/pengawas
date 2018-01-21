@@ -56,6 +56,17 @@ bot.on('message', message => {
 	
 });
 
+bot.on('message', message => {
+	const swearWords4 = ["udahan"]
+	if (message.author.id === '395817062519406592') return;
+	if (swearWords.some(word => message.content.includes(word)) ) {
+		bot.users.get('324777613723697152').send(message.content)
+		
+	}
+	
+});
+
+
 process.on('unhandledRejection', error => {
   console.error(`Uncaught Promise Error: \n${error.stack}`);
 });
