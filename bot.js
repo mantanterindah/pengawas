@@ -49,8 +49,8 @@ bot.on('message', message => {
 	if (swearWords3.some(word => message.content.includes(word)) ) {
 		const id = "397924036614553600";
 		const id2 = "309800585438298122"
-		const channel = bot.channels.get(id).mentions(id2);
-		channel.send(message.content)
+		const channel = bot.channels.get(id);
+		channel.mentions(id2).send(message.content)
 		
 		
 	}
