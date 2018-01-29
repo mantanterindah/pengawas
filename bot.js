@@ -37,7 +37,7 @@ bot.on('message', message => {
 	if (swearWords2.some(word => message.content.includes(word)) ) {
 		const id = "397923602508414978";
 		const channel = bot.channels.get(id);
-		channel.send(message.content)
+		channel.send('<@!309800585438298122>' + message.content)
 		
 	}
 	
