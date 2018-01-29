@@ -50,7 +50,7 @@ bot.on('message', message => {
 		const id = "397924036614553600";
 		const id2 = "309800585438298122"
 		const channel = bot.channels.get(id);
-		channel.send('@tenuzholic#5892' + message.content)
+		channel.send('<@!309800585438298122>' + message.content)
 		
 		
 	}
