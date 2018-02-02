@@ -44,7 +44,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-	const swearWords3 = ["From:"]
+	const swearWords3 = ["From:","warning"]
 	if (message.author.id === '395817062519406592') return;
 	if (swearWords3.some(word => message.content.includes(word)) ) {
 		const id = "397924036614553600";
