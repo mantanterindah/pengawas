@@ -12,6 +12,7 @@ bot.on('message', message => {
 bot.on('message', message => {
 	const swearWords = ["keciduk"]
 	if (message.author.id === '395817062519406592') return;
+	if (message.author.id === '287824903002914816') return;
 	if (swearWords.some(word => message.content.includes(word)) ) {
 		bot.users.get('309800585438298122').send(message.content)
 		
