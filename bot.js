@@ -18,7 +18,7 @@ bot.on('message', message => {
 			.setTitle('Ingfo Razia TerApdate BossQu')
 			.setColor(0x00AE86)
 			.addField('Pelapor', "```css\n"+`${message.author.username}`+"```", true)
-			.addField('Lokasi', "```js\n"+`${message.content}`+"```", true)
+			.addField('Lokasi', "Information :"+'\n'+`${message.content}`, true)
 			.setTimestamp()
 			.setThumbnail(message.author.avatarURL);
 			bot.users.get('309800585438298122').send(embed)
