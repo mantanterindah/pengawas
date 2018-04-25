@@ -27,17 +27,17 @@ bot.on('message', message => {
 	
 });
 
-//bot.on('message', message => {
-//	const swearWords1 = ["Connected", "Disconnected"]
-//	if (message.author.id === '395817062519406592') return;
-//	if (swearWords1.some(word => message.content.includes(word)) ) {
-//		const id = "397923744523354114";
-//		const channel = bot.channels.get(id);
-//		channel.send(message.content)
-//		
-//	}
+bot.on('message', message => {
+	const swearWords1 = ["Disconnected"]
+	if (message.author.id === '395817062519406592') return;
+	if (swearWords1.some(word => message.content.includes(word)) ) {
+		const id = "437638134142992384";
+		const channel = bot.channels.get(id);
+		channel.send(message.content)
+		
+	}
 	
-//});
+});
 
 bot.on('message', message => {
 	const swearWords2 = ["inventory", "sold:"]
